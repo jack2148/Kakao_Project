@@ -1,0 +1,18 @@
+환경 ubuntu 22.04
+
+1. 
+서버 랜포트 이름 확인
+ip a 
+
+enp3s0 PoE 연겨된 랜포트
+wlan0 wifi(인터넷)
+
+2. cctv 내부 망 전용 IP 고정
+/etc/netplan/01-cctv.yaml
+
+적용 sudo netplan apply
+
+
+3. 같은 ip 내부 장비 찾기 
+sudo apt update
+sudo apt install -y nmap
